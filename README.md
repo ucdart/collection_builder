@@ -9,6 +9,7 @@ For proper use of the functions, bibtexparser package is needed.
 Detailed installation guide and documentation can be found at
 https://bibtexparser.readthedocs.org/en/latest/install.html
 
-
-
+## Roadmap
+1. Sort by descending publication date
+2. Make a standalone command line tool 
 
