@@ -78,11 +78,11 @@ def bib2jekyllcol (inputFile, outputDir):
             for bib_type in type_list:                
                 if(entry.has_key(bib_type)):
                     if bib_type == "author":           
-                        f.write(bib_type +": " +  parse_authors(entry[bib_type])+"\n")
+                        f.write(bib_type +": \"" +  parse_authors(entry[bib_type])+"\"\n")
                     else:
-                        f.write(bib_type+": "+entry[bib_type] + "\n")     
+                        f.write(bib_type+": \""+entry[bib_type] + "\"\n")     
                 else:
-                    f.write(bib_type + ":" + "\n")                                                                
+                    f.write(bib_type + ": \"" + "\"\n")                                                                
             f.write("---")
         
 
